@@ -60,7 +60,7 @@ class Contribution(models.Model):
 		verbose_name_plural = 'Вклады'
 
 # Скриншоты проекта
-class Screensot(models.Model):
+class Screenshot(models.Model):
 	project = models.ForeignKey(Project, on_delete=models.CASCADE, verbose_name='Проект')
 	screenshot = models.ImageField(upload_to='projects/', verbose_name='Скришот')
 
